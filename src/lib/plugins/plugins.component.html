@@ -1,0 +1,24 @@
+<div style="display: flex;">
+
+
+<div>
+<p *ngFor="let repo of repos$ | async ">{{repo.name}} - {{repo.url}}  <button (click)="delete(repo.name)">Удалить</button> </p>
+Имя<br>
+<ui-text-field [title]="'name'" [(value)]="repoName"></ui-text-field><br>
+Адрес<br>
+<ui-text-field [title]="'url'" [(value)]="repoUrl"></ui-text-field><br>
+<button (click)="addRepo()">Добавить репозиторию</button>
+
+<br>
+<br>
+Фильтр<br>
+<ui-text-field [title]="'filter'" [value]="filter$|async" (valueChange)="changedFilter($event)"></ui-text-field><br>
+
+<p *ngFor="let chart of charts$  | async  ">{{chart.name}} - {{chart.version}} <button (click)="install(chart)">install</button></p>
+
+</div>
+<div>
+  <p *ngFor="let chart of installation$  | async  ">{{chart.name}} - {{chart.version}} <button (click)="remove(chart)">remove</button></p>
+</div>
+
+</div>

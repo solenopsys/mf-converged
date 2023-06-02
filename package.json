@@ -1,0 +1,27 @@
+{
+  "name": "@solenopsys/fl-converged",
+  "version": "0.1.0",
+  "scripts": {
+    "build": "ng-packagr -p ng-package.json -c ../../../../tsconfig.base.json"
+  },
+  "devDependencies": {
+    "json5": "^2.2.3",
+    "number-generator": "^4.0.6",
+    "protobufjs": "^7.2.3"
+  },
+  "peerDependencies": {
+    "@solenopsys/ui-layouts": "^0.1.0",
+    "@solenopsys/fl-globals": "^0.1.0",
+    "@solenopsys/ui-templates": "^0.1.0",
+    "@solenopsys/fl-clusters": "^0.1.0",
+    "@solenopsys/fl-storage": "^0.1.0",
+    "@solenopsys/ui-lists": "^0.1.0",
+    "@solenopsys/fl-hyperstreams": "^0.1.0",
+    "@solenopsys/ui-forms": "^0.1.0",
+    "@solenopsys/fl-helm": "^0.1.0",
+    "@solenopsys/fl-installer": "^0.1.0",
+    "@solenopsys/ui-themes": "^0.1.0",
+    "@solenopsys/ui-controls": "^0.1.0",
+    "@solenopsys/ui-navigate": "^0.1.0"
+  }
+}
