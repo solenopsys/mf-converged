@@ -1,5 +1,5 @@
 {
-  "name": "@solenopsys/fl-converged",
+  "name": "@solenopsys/mf-converged",
   "version": "0.1.0",
   "scripts": {
     "build": "xs-pack"
